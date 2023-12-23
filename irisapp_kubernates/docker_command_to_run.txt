@@ -1,0 +1,5 @@
+docker build -t iris-fastapi-service:v1 .
+docker run -it -p 5000:5000 iris-fastapi-service:v1
+docker tag iris-fastapi-service:v1 <user-name>/iris-fastapi-service:v1
+docker push <user-name>/iris-fastapi-service:v1
+
